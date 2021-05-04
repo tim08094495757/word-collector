@@ -1,0 +1,29 @@
+{
+	"name": "word collector",
+	"short_name": "wdcr",
+	"description": "collect the words on the web page",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["storage", "tabs", "activeTab", "scripting",
+	                "unlimitedStorage"],
+	"action": {
+	    "default_title": "Collect all you want", 
+		"default_popup": "popup.html",
+		"default_icon": {
+		  "16": "imgs/icon16.png",
+		  "32": "imgs/icon32.png",
+		  "48": "imgs/icon48.png",
+		  "128": "imgs/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "imgs/icon16.png",
+		"32": "imgs/icon32.png",
+		"48": "imgs/icon48.png",
+		"128": "imgs/icon128.png"
+	},
+	"options_page": "options.html"
+}

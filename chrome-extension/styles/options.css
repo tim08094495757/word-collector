@@ -1,0 +1,118 @@
+button{
+	display: block;
+}
+
+h3 {
+	font-size: 16px;
+}
+h4 {
+	margin: 0;
+}
+th,h4 {
+	font-size: 14px;
+}
+
+
+textarea {
+  resize: none;
+  //border: 0;
+  padding: 0;
+}
+textarea, input {
+  width: 175px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border-width : 1px;
+}
+table{
+	border-spacing:0;
+	//border-collapse: collapse;
+}
+tr{
+	display: flex;
+	align-items: stretch;
+}
+td{
+	padding: 0;
+	height: 80px;
+}
+td > *{
+	height: 100%;
+	width: 100%;
+}
+td.entry_add button,
+td.entry_del button{
+	width: 40px;
+	font-size: 16px;
+}
+tr .entry_key{
+	width: 65px;
+}
+tr .entry_val{
+	width: 175px;
+}
+
+
+.zone{
+	max-width: 720px;
+	display: flex;
+	width: fit-content;
+}
+.container{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid black;
+	//width: fit-content;
+	
+	margin-bottom: 10px;
+	margin-right: 30px;
+
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+}
+.container h3{
+	color: blue;
+	
+}
+
+.content{
+	display: flex;
+}
+.content > section{
+	display: flex;
+	flex-direction: column;
+}
+.content > section > .content,
+.container > .content{
+	margin-top: auto;
+}
+
+
+
+.head p{
+	margin: auto 0;
+	margin-left: 10px;
+	padding-top: 6px;
+	align-self: end;
+}
+
+
+.sync-container {
+	position: fixed;
+	right: 0;
+	top: 0;
+	flex-direction: column;
+}
+.sync-container button#save_btn{
+	font-size: 50px;
+}
+
+.ignore-container textarea{
+	width: 160px;
+}
+.stg-container{
+	flex-wrap: wrap;
+}

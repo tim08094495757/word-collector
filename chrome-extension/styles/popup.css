@@ -1,0 +1,100 @@
+tr td:first-child,
+tr th:first-child{
+	width: 180px;
+	max-width: 180px;
+	overflow: auto;
+}
+tr td:not(:first-child),
+tr th:not(:first-child){
+	width: 70px;
+	text-align: center;
+}
+main {
+	width: 320px;
+}
+footer{
+	text-align: center;
+}
+thead, tbody { display: block; }
+table{
+	display: block;
+    height: 300px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+.zone{
+	display: flex;
+	width: 100%;
+}
+.container{
+	display: flex;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.content button{
+	flex: 1;
+}
+button#collector_btn{
+	margin-right: 5px;
+}
+
+.collect-container{
+	flex: 2;
+}
+.collection-stg-container{
+	flex-direction: column;
+	flex: 1;
+}
+.collection-container{
+	flex-direction: column;
+	width: 100%;
+}
+.collection-container h3{
+	text-align: center;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 31px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E5E8E8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: 3.5px;
+  bottom: 3.5px;
+  background-color: white;
+}
+input:checked + .slider {
+  background-color: gray;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/options.css">
+	<script src="setting.js"></script>
+  </head>
+  <body>
+    <header class="head content ">
+      <h1>word collector</h1>
+	  <p>Keep Trying~</p>
+    </header>
+	<main>
+		<article class="zone stg-container">
+			<section class="container">
+				<h3>extraBreakModes</h3>
+				<p>#duplicated key error(includes default mode keys)</p>
+				<div class="content">
+					<table id="extrabreakmode_table"></table>
+				</div>
+			</section>
+			<section class="container">
+				<h3>searchableLinks</h3>
+				<div class="content">
+					<table id="srchbllink_table"></table>
+				</div>
+			</section>
+			<section class="container">
+				<h3>breakModes</h3>
+				<div class="content">
+					<h4>bytePairItrNum</h4>
+					<input id="bp_itr_num" type="number">
+				</div>
+			</section>
+			<section class="container ignore-container">
+				<h3>ignored</h3>
+				<div class="content">
+					<section>
+						<h4>charsStrg</h4>
+						<textarea class="content" id="ignorechars_tarea"></textarea>
+					</section>
+					<section>
+						<h4>tagsStrg</h4>
+						<textarea class="content" id="ignoretags_tarea"></textarea>
+					</section>
+				</div>
+			</section>
+		</article>	
+		<!--
+		will combine with chrome.storage.local
+		and unlimitedStorage in the future
+		<article>
+			<h2>history</h2>
+			<table id="history_table"></table>
+		</article>
+		-->
+		<article class="zone sync-container">
+			<button id="save_btn">save</button>
+			<button id="clearsync_btn">clearSync</button>
+			<button id="clearlocal_btn">clearLocal</button>
+		</article>
+	</main>	
+    <footer>
+       <small>&copy; 2021 Tim</small>
+    </footer>
+	<script type="module" src="options.js"></script>
+  </body>
+</html>

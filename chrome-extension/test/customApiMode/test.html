@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<script>
+	async function api(strg, ignoreCharsStrg, src){
+		const raw={
+			content: strg,
+			ignoreCharsStrg: ignoreCharsStrg
+		};
+		return fetch(src, {
+		  method: 'post',
+		  headers: {
+				"Accept": "application/json",
+				"Content-Type": "application/json"
+		  },
+		  body: JSON.stringify(raw)
+		})
+		.then(resp => resp.json())
+		.then(json => json.data);
+	}
+
+	api(
+	"你好壓",
+	"",
+	"https://5iaax8r1ih.execute-api.ap-northeast-1.amazonaws.com/break-word-test"
+	)
+	.then(resp=>{
+		console.log("resp",resp);
+
+	})
+	</script>
+  </body>
+</html>

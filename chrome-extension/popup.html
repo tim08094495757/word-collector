@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/popup.css">
+	<script src="setting.js"></script>
+  </head>
+  <body>
+    <header></header>
+	<main>
+		<div class="zone">
+			<section class="collect-container container">
+				<div class="content">
+					<section>
+						<h3>collectOnStart</h3>
+						<label class="switch">
+						  <input id="autostart_cbox" type="checkbox">
+						  <span class="slider"></span>
+						</label>
+					</section>
+					<section>
+						<h3>reverseOrder</h3>
+						<label class="switch">
+						  <input id="reverse_cbox" type="checkbox">
+						  <span class="slider round"></span>
+						</label>
+					</section>
+					<section>
+						<h3>breakMode</h3>
+						<select id="breakmode_select" name="breakMode"></select>
+					</section>
+				</div>
+				<div class="content">
+					<button id="collector_btn">collect</button>
+				</div>
+			</section>
+			<section class="collection-stg-container container">
+				<div class="content">
+					<section>
+						<h3>searchableLink</h3>
+						<select name="srchblLink" id="srchbllink_select"></select>
+					</section>
+				</div>
+				<div class="content">
+					<button id="download_btn">download</button>
+				</div>
+			</section>
+		</div>
+		<article>
+			<section class="collection-container container">
+				<h3>collection</h3>
+				<table id="collection_table"></table>
+			</section>
+		</article>
+	</main>
+    <footer>
+       <small>&copy; 2021 Tim</small>
+    </footer>
+	<script type="module" src="popup.js"></script>
+  </body>
+</html>
