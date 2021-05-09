@@ -1,14 +1,13 @@
 {
-	"name": "word collector",
-	"short_name": "wdcr",
-	"description": "collect the words on the web page",
-	"version": "1.0",
+	"name": "word collector - improve your vocabulary",
+	"short_name": "word collector",
+	"description": "word collector can help you to collect the words on the webpage, and improve your vocabulary",
+	"version": "1.1",
 	"manifest_version": 3,
 	"background": {
 		"service_worker": "background.js"
 	},
-	"permissions": ["storage", "tabs", "activeTab", "scripting",
-	                "unlimitedStorage"],
+	"permissions": ["storage", "activeTab", "scripting"],
 	"action": {
 	    "default_title": "Collect all you want", 
 		"default_popup": "popup.html",

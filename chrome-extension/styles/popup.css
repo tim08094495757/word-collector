@@ -18,9 +18,9 @@ footer{
 thead, tbody { display: block; }
 table{
 	display: block;
-    height: 300px;       /* Just for the demo          */
-    overflow-y: auto;    /* Trigger vertical scroll    */
-    overflow-x: hidden;  /* Hide the horizontal scroll */
+    height: 300px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 .zone{
