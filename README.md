@@ -12,7 +12,7 @@ https://chrome.google.com/webstore/detail/word-collector/kplmeohpfcgnijkamkfibfp
    "ignoreCharsStrg": "" //string:  ignore charsStrg
 ```
 code example:
-https://github.com/tim08094495757/word-collector/blob/main/chrome-extension/test/customApiMode/lambda_function.py
+https://github.com/tim08094495757/word-collector/blob/main/test/customApiMode/lambda_function.py
 
 ## intro video link
 **English**:
